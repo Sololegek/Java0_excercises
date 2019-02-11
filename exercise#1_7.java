@@ -13,14 +13,14 @@ public class Main {
         System.out.print("Введите второе число: b = ");
         b = Integer.parseInt(in.readLine());
 
-        change(a, b);
+        changeVar(a, b);
 
         System.out.println("a =  " + a);
         System.out.println("b =  " + b);
 
     }
 
-    public static void change(int x, int y){
+    public static void changeVar(int x, int y){
         a = y;
         b = x;
     }
