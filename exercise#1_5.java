@@ -15,11 +15,8 @@ public class Main {
         for (int i = 0; i < digits.length; i++) {
             digits[i] = num % 10;
             num = num / 10;
-        }
-
-        for (int i = 0; i < digits.length; i++) {
-           ar_aver = ar_aver + digits[i];
-           g_aver = g_aver * digits[i];
+            ar_aver = ar_aver + digits[i];
+            g_aver = g_aver * digits[i];
         }
 
         ar_aver = ar_aver / digits.length;
