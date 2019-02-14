@@ -17,13 +17,16 @@ public class Main {
             num = num / 10;
             if (i > 0 && (digits[i] > digits[i-1] || i == 3)){
                 upper = false;
-            } else i++;
+            } else {
+                i++;
+                }
         } while (upper);
 
         if (i == 3){
             System.out.println("Возрастающая последовательность");
-        } else System.out.println("Последовательность невозрастающая");
-
+        } else {
+            System.out.println("Последовательность невозрастающая");
+            }
     }
 }
 
