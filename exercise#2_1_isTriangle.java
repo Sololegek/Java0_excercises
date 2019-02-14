@@ -33,7 +33,9 @@ public class Main {
                 Math.pow(length3, 1.0/2.0) + Math.pow(length2, 1.0/2.0) == Math.pow(length1, 1.0/2.0) ||
                 Math.pow(length1, 1.0/2.0) + Math.pow(length3, 1.0/2.0) == Math.pow(length2, 1.0/2.0)){
             System.out.println("Это не треугольник, а прямая линия");
-        } else System.out.println("Это непрямоугольный треугольник");
+        } else {
+            System.out.println("Это непрямоугольный треугольник");
+            }
     }
 }
 
