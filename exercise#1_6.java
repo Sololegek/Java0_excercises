@@ -17,6 +17,8 @@ public class Main {
             }
 
             System.out.println("Число наоборот: " + result);
-        } else System.out.println("Неверный ввод!");
+        } else {
+            System.out.println("Неверный ввод!");
+            }
     }
 }
