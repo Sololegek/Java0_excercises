@@ -18,6 +18,8 @@ public class Main {
             System.out.println("Все переменные одинаковы!");
         } else if (a != b && b!= c && a != c){
             System.out.println("Все переменные разные!");
-        } else System.out.println("Переменные частично различаются...");
-    }
+        } else {
+            System.out.println("Переменные частично различаются...");
+        }
+    }   
 }
