@@ -14,7 +14,7 @@ public class Main {
         do {
             System.out.println("Введите целое шестизначное число: ");
             num = Integer.parseInt(in.readLine());
-        } while (num < 99999 || num > 1000000);
+        } while (num < 100000 || num > 999999);
 
         do {
             digit = num % 10;
