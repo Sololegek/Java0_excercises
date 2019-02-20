@@ -10,17 +10,17 @@ public class Main {
         int num = Integer.parseInt(in.readLine());
         int[] digits = new int[4];
         int i = 0;
-        boolean upper = true;
+        boolean isUpper = true;
 
         do {
             digits[i] = num % 10;
             num = num / 10;
             if (i > 0 && (digits[i] > digits[i-1] || i == 3)){
-                upper = false;
+                isUpper = false;
             } else {
                 i++;
                 }
-        } while (upper);
+        } while (isUpper);
 
         if (i == 3){
             System.out.println("Возрастающая последовательность");
