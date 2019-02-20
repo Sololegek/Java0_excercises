@@ -6,27 +6,30 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите целое четырёхзначное число: ");
-        int num = Integer.parseInt(in.readLine());
-        int[] digits = new int[4];
-        int i = 0;
+        int num;
+        int digit = 0;
+        int divider = 1000;
         boolean isUpper = true;
 
         do {
-            digits[i] = num % 10;
-            num = num / 10;
-            if (i > 0 && (digits[i] > digits[i-1] || i == 3)){
-                isUpper = false;
-            } else {
-                i++;
-                }
-        } while (isUpper);
+            System.out.println("Введите целое четырёхзначное число: ");
+            num = Integer.parseInt(in.readLine());
+        } while (num < 1000 || num > 9999);
 
-        if (i == 3){
+        while (isUpper & num > 0) {
+            if (digit < num / divider){
+                digit = num / divider;
+                num = num - digit * divider;
+                divider /= 10;
+            } else {
+                isUpper = false;
+            }
+        }
+
+        if (isUpper){
             System.out.println("Возрастающая последовательность");
         } else {
             System.out.println("Последовательность невозрастающая");
-            }
+        }
     }
 }
-
