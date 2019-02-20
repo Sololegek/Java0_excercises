@@ -30,7 +30,8 @@ public class Main {
             System.out.println("Последовательность возрастающая.");
         } else if (result == -3){
             System.out.println("Последовательность убывающая.");
-        } else System.out.println("Последовательность неравномерная.");
-
+        } else{
+            System.out.println("Последовательность неравномерная.");
+        }
     }
 }
