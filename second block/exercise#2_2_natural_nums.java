@@ -24,9 +24,9 @@ public class Main {
 
         System.out.println("Простые делители числа " + num + ": " + findSimpleDividers(num));
 
-        System.out.println("Наибольший общий делитель чисел " + num + " и " + num2 + ": " + findNod(num, num2));
+        System.out.println("Наибольший общий делитель чисел " + num + " и " + num2 + ": " + findGCD(num, num2));
 
-        System.out.println("Наименьшее общее кратное чисел " + num + " и " + num2 + ": " + findNok(num, num2));
+        System.out.println("Наименьшее общее кратное чисел " + num + " и " + num2 + ": " + findLCM(num, num2));
 
         System.out.println("В числе " + num + " " + findDifferentDigits(num) + " различных цифр.");
     }
@@ -83,7 +83,7 @@ public class Main {
         return result;
     }
 
-    private static int findNod(int a, int b){
+    private static int findGCD(int a, int b){
         int result;
         int min;
         if (a > b){
@@ -100,7 +100,7 @@ public class Main {
         return 1;
     }
 
-    private static long findNok(int a, int b){
+    private static long findLCM(int a, int b){
         long result;
         int max;
         int min;
