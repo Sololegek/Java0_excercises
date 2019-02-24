@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args)  {
         Random r = new Random();
         int num = Math.abs(r.nextInt());
+        num = num == 0 ? num + 1 : num;
         int result = 0;
 
         for (int divider = 1; divider <= num / 2; divider++){
