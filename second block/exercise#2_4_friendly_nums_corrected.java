@@ -1,9 +1,8 @@
-import java.io.IOException;
 import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Random r = new Random();
         int num = Math.abs(r.nextInt(10000));
         int num2 = Math.abs(r.nextInt(100000));
