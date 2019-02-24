@@ -7,10 +7,10 @@ public class Main {
         int num = Math.abs(r.nextInt(10000));
         int num2 = Math.abs(r.nextInt(100000));
         int count = 0;
-        int tempNum = num;
-
+        
         num = num == 0 ? num + 1 : num;
         num2 = num2 == 0 ? num2 + 1 : num2;
+        int tempNum = num;
 
         if (num > num2){
             tempNum = num2;
