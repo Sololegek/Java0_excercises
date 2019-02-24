@@ -40,7 +40,7 @@ public class Main {
             if (result < num % 10){
                 result = num % 10;
             }
-        } while (num > 0 & result < 9);
+        } while (num > 0 && result < 9);
         return result;
     }
 
@@ -90,7 +90,7 @@ public class Main {
         int min = a > b ? b : a;
         for (int i = 1; i <= min; i++) {
             result = min/i;
-            if (a % result == 0 & b % result == 0) {
+            if (a % result == 0 && b % result == 0) {
                 return result;
             }
         }
