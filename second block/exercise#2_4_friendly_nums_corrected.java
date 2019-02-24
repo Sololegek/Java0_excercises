@@ -22,9 +22,9 @@ public class Main {
 
         while (tempNum < num2){
             int result = findSum(tempNum);
-            if (result < num2 & result > num) {
+            if (result < num2 && result > num) {
                 int result2 = findSum(result);
-                if (result2 == tempNum & tempNum != result) {
+                if (result2 == tempNum && tempNum != result) {
                     System.out.println("Числа " + tempNum + " и " + result + " являются дружественными.");
                     count++;
                 }
