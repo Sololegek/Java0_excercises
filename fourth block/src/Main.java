@@ -30,7 +30,6 @@ public class Main {
         System.out.println(collection.toString());
 
         System.out.println(dh.totalTime(collection));
-
         dh.sortDisk(collection);
         dh.printSongList(collection);
         System.out.println();
