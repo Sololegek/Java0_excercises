@@ -14,6 +14,7 @@ class ReadFromFile {
                 lines.add(content);
                 content = reader.readLine();
             }
+            reader.close();
         } catch (FileNotFoundException ex) {
             System.out.println(ex);
         }

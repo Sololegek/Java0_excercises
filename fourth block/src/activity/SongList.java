@@ -1,6 +1,7 @@
 package activity;
 
 import entity.songs.*;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.Iterator;
 public class SongList {
 
     private ArrayList<Song> songList = new ArrayList<>();
-
+    private static final Logger log = Logger.getLogger(SongList.class);
     public void addSongToBase() throws IOException{
         ReadFromFile fileContent = new ReadFromFile();
         String[][] songInfo = fileContent.getInfoFromFile("D:\\file.txt");
@@ -33,6 +34,7 @@ public class SongList {
     }
 
     public void showAllSongs(){
+        log.info("Showing a list of all songs in a base...");
         Iterator<Song> iterator = songList.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next().toString());
